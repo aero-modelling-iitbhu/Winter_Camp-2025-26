@@ -159,6 +159,7 @@ Every element of this matrix is called:
 ---
 
 ## Overlapping Fields with Image Processing
+![alt text](images/image.png)
 
 - **Digital Image Processing**
   - Input: Image  
@@ -286,6 +287,7 @@ Understanding pixels is crucial because they determine the **resolution** and **
   - \(256 \times 256 \times 256 = 16,777,216\) colors (~16 million).
 
 **Advantages of the RGB Color Model:**
+![alt text](images/image-1.png)
 
 - No transformations required to display on most screens.
 - Considered the **base color space** for many applications.
@@ -317,6 +319,7 @@ If the image is of class `uint8`:
   \]
 
 #### Color Planes in MATLAB
+![alt text](images/image-2.png)
 
 Let the RGB image array be `I`:
 
@@ -329,7 +332,7 @@ You need to place the image in MATLAB’s working directory or use the full path
 ---
 
 ### HSV Color Space
-
+![alt text](images/image-3.png)
 HSV stands for:
 
 - **H**: Hue  
