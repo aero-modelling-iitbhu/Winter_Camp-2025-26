@@ -1,6 +1,6 @@
 # AeroModling Club Winter Camp 2025 - OpenCV Workshop  
 
-Welcome to the official repository for the **** hosted by the **AeroModling Club, IIT (BHU) Varanasi** under the **Science and Technology Council**.  
+Welcome to the official repository for the students hosted by the **AeroModling Club, IIT (BHU) Varanasi** under the **Science and Technology Council**.  
 
 
 ## Repository Highlights  
