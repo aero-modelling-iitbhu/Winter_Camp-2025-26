@@ -159,6 +159,7 @@ Every element of this matrix is called:
 ---
 
 ## Overlapping Fields with Image Processing
+
 ![alt text](images/image.png)
 
 - **Digital Image Processing**
@@ -333,6 +334,7 @@ You need to place the image in MATLAB’s working directory or use the full path
 
 ### HSV Color Space
 ![alt text](images/image-3.png)
+
 HSV stands for:
 
 - **H**: Hue  
