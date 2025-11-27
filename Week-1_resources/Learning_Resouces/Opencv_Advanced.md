@@ -1,6 +1,7 @@
 # OpenCV – Python Reference Overview
 
 OpenCV (Open Source Computer Vision Library) is a powerful computer-vision & machine-learning library with **2500+ optimized algorithms**.  
+![alt text](images/image4.png)
 It supports multiple languages including **Python, C++, Java, MATLAB** and runs on **Windows, Linux, macOS, Android**.
 
 OpenCV-Python is the Python interface of OpenCV — combining the efficiency of C++ backend with Python's simplicity.
@@ -59,7 +60,7 @@ OpenCV-Python is the Python interface of OpenCV — combining the efficiency of 
 
 ---
 
-## 🔥 Special Add-On Section
+##  Special Add-On Section
 
 | Topic | Use Case | Docs |
 |------|----------|------|
