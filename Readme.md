@@ -12,7 +12,7 @@ This repository includes:
 ---
 
 ## Stay Connected  
-- **WhatsApp Group:** [Join for Updates](https://chat.whatsapp.com/G6Bxktw9I4DLx31biUCZtn)  
+- **WhatsApp Group:** [Join for Updates](https://chat.whatsapp.com/Jvr82agpxeSDCMCe26D8FR?mode=hqrt1)  
 - **Instagram:** [amc.iitbhu](https://www.instagram.com/amc.iitbhu?igsh=dnYwM2xiYW9yYmJ4)
 
 ---
