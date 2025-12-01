@@ -170,4 +170,4 @@ Submit a **compressed ZIP file** containing:
 
 Please upload your ZIP files for all tasks here:
 
-👉 **[Submission Portal](ADD_SUBMISSION_LINK_HERE)**
+👉 **[Submission Portal](https://forms.gle/hx9ZFgWVN6AVhek56)**
