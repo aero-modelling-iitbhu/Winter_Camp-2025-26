@@ -19,7 +19,7 @@ This task challenges you to build a basic visual representation of a quadrotor d
 * **Design with URDF:** Using a text editor, create a URDF file for a virtual drone.
 * **Focus on Visuals:** Define the drone's components (fuselage, arms, propellers) using `<visual>` and `<geometry>` tags with simple shapes (boxes for the body, cylinders for the motors/props).
 * **Simulation:**
-    1.  Access the provided [online URDF visualizer](https://gkjohnson.github.io/urdf-loaders/javascript/example/bundle/).
+    1.  Access the provided [online URDF visualizer](https://mymodelrobot.appspot.com/5629499534213120).
     2.  Upload your completed URDF file to the visualizer.
     3.  Utilize the visualizer's functionalities to verify the placement of your rotors.
     4.  Animate the `continuous` joints to observe and record the propellers spinning.
