@@ -1,0 +1,226 @@
+<robot name="robot_name">
+    <link name="world"/>
+    <link name="caterpillar_wheel1">
+        <visual name="">
+            <origin xyz="0.0 0.3 -0.1" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="1.2 0.1 0.2"/>
+            </geometry>
+            <material name="Black_base1">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+	<link name="caterpillar_wheel2">
+        <visual name="">
+            <origin xyz="0.0 -0.3 -0.1" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="1.2 0.1 0.2"/>
+            </geometry>
+            <material name="Black_base2">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+	 </link>
+	<link name="Main_base">
+        <visual name="">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.5 0.6 0.1"/>
+            </geometry>
+            <material name="Black_base">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+	</link>
+	<joint name="mainjoint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="world"/>
+        <child link="Main_base"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+	<joint name="mainjoint2" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="Main_base"/>
+        <child link="caterpillar_wheel1"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+	<joint name="mainjoint3" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="Main_base"/>
+        <child link="caterpillar_wheel2"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+
+	<link name="cabin_sit_base">
+        <visual name="">
+            <origin xyz="-0.05 0.15 0.2" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.57 0.30 0.2"/>
+            </geometry>
+            <material name="glass">
+                <color rgba="1.0 1.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+    </link>
+	
+	<link name="move_base_main">
+        <visual name="">
+            <origin xyz="-0.05 0.0 0.08" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.6 0.6 0.05"/>
+            </geometry>
+            <material name="black_move_base">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+    </link>
+	<joint name="moveablejoint" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="Main_base"/>
+        <child link="move_base_main"/>
+        <axis xyz="0.0 0.0 1.0"/>
+      	<limit lower="-3.14" upper="3.14" effort="20" velocity="1.0"/>
+    </joint>
+	<joint name="cabin_base" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="move_base_main"/>
+        <child link="cabin_sit_base"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+	<link name="cabin">
+        <visual name="">
+            <origin xyz="-0.18 0.15 0.4" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.3 0.30 0.2"/>
+            </geometry>
+            <material name="glass_cabin">
+                <color rgba="0.0 0.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+    </link>
+	<joint name="cabin_pure" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="cabin_sit_base"/>
+        <child link="cabin"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+
+	<link name="cabin_side_base">
+        <visual name="">
+            <origin xyz="-0.000 -0.15 0.16" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.45 0.30 0.12"/>
+            </geometry>
+            <material name="mat">
+                <color rgba="1.0 1.0 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+    </link>
+	<joint name="cabin_side" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="move_base_main"/>
+        <child link="cabin_side_base"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+	<link name="arm_base">
+        <visual name="">
+            <origin xyz="-0.28 -0.15 0.13" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.10 0.3 0.05"/>
+            </geometry>
+            <material name="mate">
+                <color rgba="1.0 1.0 1.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+    </link>
+	<joint name="arm_base_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="move_base_main"/>
+        <child link="arm_base"/>
+        <axis xyz="0.0 0.0 0.0"/>
+    </joint>
+	<link name="arm_1_1">
+        <visual name="">
+            <origin xyz="-0.0 -0.0 0.3" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.10 0.08 0.7"/>
+            </geometry>
+            <material name="arm_mat">
+                <color rgba="1.0 0.8 0.0 1.0"/>
+                <texture filename=""/>
+            </material>
+        </visual>
+    </link>
+	<joint name="arm_joint_1" type="revolute">
+        <origin xyz="-0.28 -0.15 0.15" rpy="0.0 0.0 0.0"/>
+        <parent link="arm_base"/>
+        <child link="arm_1_1"/>
+        <axis xyz="0.0 1.0 0.0"/>
+      	<limit lower="-1.57" upper="0.6" effort="5.0" velocity="1.0"/>
+    </joint>
+	<link name="arm_top_block">
+    	<visual name="">
+        	<origin xyz="0.06 0 0.18" rpy="0 -0.5 0"/> 
+        	<geometry>
+            	<box size="0.1 0.08 0.6"/>
+        	</geometry>
+        	<material name="arm_mat_top">
+            	<color rgba="1.0 0.8 0.0 1.0"/>
+        	</material>
+    	</visual>
+	</link>
+
+	<joint name="arm_top_joint" type="fixed">
+    	<origin xyz="-0.2 -0.01 0.7" rpy="0 0 0"/> 
+    	<parent link="arm_1_1"/>
+    	<child link="arm_top_block"/>
+    	<axis xyz="0 0 0"/>
+	</joint>
+	<link name="arm_2_1">
+    	<visual name="">
+        	<origin xyz="-0.00 0 0.25" rpy="0 0 0"/>
+        	<geometry>
+            	<box size="0.1 0.08 0.55"/>
+        	</geometry>
+        	<material name="arm_mat_2">
+            	<color rgba="1.0 0.8 0.0 1.0"/>
+        	</material>
+    	</visual>
+	</link>
+
+	<joint name="arm_joint_2" type="revolute">
+    	<origin xyz="-0.10 0 0.45" rpy="0 0 0"/>
+    	<parent link="arm_top_block"/>
+    	<child link="arm_2_1"/>
+    	<axis xyz="0 1 0"/>
+    	<limit lower="-1.57" upper="-0.4" effort="5.0" velocity="1.0"/>
+	</joint>
+
+	<link name="front_bucket">
+    	<visual>
+        	<origin xyz="0 0 0.1" rpy="1.57 0 0"/> 
+        	<geometry>
+            	<cylinder radius="0.15" length="0.3"/> 
+        	</geometry>
+        	<material name="bucket_color">
+            	<color rgba="0.3 0.3 0.3 1.0"/>
+        	</material>
+    	</visual>
+	</link>
+
+	<joint name="bucket_joint" type="revolute">
+    	<origin xyz="0 0 0.5" rpy="0 0 0"/>
+    	<parent link="arm_2_1"/>
+    	<child link="front_bucket"/>
+    	<axis xyz="0 1 0"/> 
+    	<limit lower="-1.57" upper="1.0" effort="10.0" velocity="1.0"/>
+	</joint>
+
+    
+</robot>
