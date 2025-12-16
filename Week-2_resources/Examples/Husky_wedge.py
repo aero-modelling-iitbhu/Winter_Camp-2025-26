@@ -94,7 +94,7 @@ def Torque_control():
 
 def Velocity_control():
     maxForce = 200 # High force limit to ensure it can push up the hill
-    optimal_velocity_value = -50 # Rad/s
+    optimal_velocity_value = -100 # Rad/s
     
     for joint_index in wheel_indices:
         p.setJointMotorControl2(
@@ -110,7 +110,7 @@ def Velocity_control():
 step_counter = 0
 
 while (1):
-    time.sleep(1./240.)
+    time.sleep(1./960.)
     
     if mode == 't':
         Torque_control()

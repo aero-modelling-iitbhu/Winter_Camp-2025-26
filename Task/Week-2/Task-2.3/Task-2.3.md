@@ -39,7 +39,7 @@ A PID controller has been implemented to adjust the altitude of the drone. You c
 2. **video** of the drone along with the terminal showing its height.
 
 **Put all this in Github and Submit the link of the Repo**
-[Submission Link]()
+[Submission Link](https://docs.google.com/forms/d/1XdrWg5ZymrubJwWvwuUfUCARNPzmK7JQNkCludnv89o/viewform)
 ---
 
 ## 🎲 Game Time
@@ -53,4 +53,4 @@ Here you'll be asked a few interesting questions based on the task you just did.
 > **Note:** This is evaluative and is also meant for strengthening your knowledge.
 
 Here is the link to Part 2. All the Best!
-* [Did You Get The Control? - Part 2](INSERT_QUIZ_LINK_HERE)
+* [Did You Get The Control? - Part 2](https://docs.google.com/forms/d/1l66HURuEpovKzYJL_hhBou43UgvUPA9FXiwh0Md6CQs/viewform)

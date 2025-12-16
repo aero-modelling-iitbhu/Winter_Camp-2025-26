@@ -23,7 +23,7 @@ p.changeDynamics(planeId,
 getInfo = p.getDynamicsInfo(sphereId, -1)
 print(getInfo)
 
-p.setGravity(0, 0, -9.8)
+p.setGravity(0, 0, -19.8)
 
 while(1):
     p.stepSimulation()
